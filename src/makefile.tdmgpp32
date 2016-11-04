@@ -23,7 +23,7 @@ LIB_DIR = -L$(MINGW_WLIB) -L$(MINGW_LG) -L$(MINGW_LIB) -L$(MINGW_L)
 LIB_DIR32 = -L$(MINGW_WLIB32) -L$(MINGW_LIB32) -L$(LIB_DIR)
 LIB_M = -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread
 LIB_W = -ladvapi32 -lshell32 -luser32 -lkernel32
-LIB_FIX = -lstdc++ $(LIB_M) $(LIB_W)
+LIB_FIX = -lstdc++ $(LIB_M) $(LIB_W) -lstdc++ $(LIB_M) $(LIB_W)
 #
 # -lcomdlg32 -lgdi32 --subsystem windows
 # -ld3d9 -ld3dx9
